@@ -1,0 +1,9 @@
+server:
+  port: 8081
+config:
+  host: 192.168.1.108
+  email: 257787887@qq.com
+  pro: 8080
+  name:
+    - 小华
+    - 小明
