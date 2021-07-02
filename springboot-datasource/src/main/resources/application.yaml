@@ -17,12 +17,24 @@ spring:
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
-    filters: stat,wall,log4j
+    filters: stat,wall,slf4j #,log4j
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 #mybatis配置
 mybatis:
+  #设置MyBatis的配置文件（可以不用这个文件设置，可以直接在此yaml文件中设置）
+  #config-location: classpath:sqlMapConfig.xml
+  #设置mapper文件的位置，扫描classpath:mapper/路径下的所有mapper文件
   mapper-locations: classpath:mapper/*.xml
   configuration:
+    #开启字段驼峰模式和下划线模式的映射
     map-underscore-to-camel-case: true
+  #设置cn.tx.datasource包下的所有mapper接口的别名（别名为接口的类名，大小写不区分）:
+  #type-aliases-package: cn.tx.datasource
+#log4j2日志配置
+logging:
+  #设置log4j2的配置文件
+  config: classpath:log4j2-spring.xml
+  level:
+    cn.jay.repository: trace

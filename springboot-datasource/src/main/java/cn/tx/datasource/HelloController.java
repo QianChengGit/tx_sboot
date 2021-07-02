@@ -13,6 +13,8 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
+    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(HelloController.class);
+
     @Autowired
     private DataSource dataSource;
 
@@ -37,6 +39,7 @@ public class HelloController {
 
     @RequestMapping("/findUser")
     private List<User> findUser(){
+        log.info("查询所有用户");
         return userMapper.findUser();
     }
 
