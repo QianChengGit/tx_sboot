@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-springMVC" />
         <module name="springboot-datasource" />
         <module name="main-test" />
         <module name="springboot-Profile" />
+        <module name="springboot-web-component" />
         <module name="common-pay" />
         <module name="springboot-first" />
         <module name="ali-pay" />
@@ -24,6 +26,8 @@
       <module name="springboot-Profile" options="-parameters" />
       <module name="springboot-datasource" options="-parameters" />
       <module name="springboot-first" options="-parameters" />
+      <module name="springboot-springMVC" options="-parameters" />
+      <module name="springboot-web-component" options="-parameters" />
       <module name="tx_sboot" options="-parameters" />
       <module name="wx-pay" options="-parameters" />
     </option>

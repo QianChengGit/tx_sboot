@@ -13,6 +13,8 @@
         <module>springboot-profile</module>
         <module>java-spi</module>
         <module>springboot-datasource</module>
+        <module>springboot-web-component</module>
+        <module>springboot-springMVC</module>
     </modules>
     <!-- 设置为父工程 -->
     <packaging>pom</packaging>
