@@ -15,6 +15,7 @@
         <module>springboot-datasource</module>
         <module>springboot-web-component</module>
         <module>springboot-springMVC</module>
+        <module>springboot-static-resources</module>
     </modules>
     <!-- 设置为父工程 -->
     <packaging>pom</packaging>

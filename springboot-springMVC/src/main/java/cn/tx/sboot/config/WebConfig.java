@@ -1,6 +1,7 @@
 package cn.tx.sboot.config;
 
 import cn.tx.sboot.interceptor.MyInterceptor;
+import cn.tx.sboot.view.TxViewResolver;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
@@ -89,4 +90,19 @@ public class WebConfig implements WebMvcConfigurer {
 
         return new HttpMessageConverters(fastJsonHttpMessageConverter);
     }
+
+    //注册配置视图解析器
+//    @Override
+//    public void configureViewResolvers(ViewResolverRegistry registry) {
+//        registry.viewResolver(new TxViewResolver());
+//        registry.order(Integer.MIN_VALUE+10);//通过order值改变视图解析器的加载顺序
+//    }
+
+    //使用bean的方式配置视图解析器
+    @Bean
+    public TxViewResolver txViewResolver(){
+        return new TxViewResolver();
+    }
+
+
 }

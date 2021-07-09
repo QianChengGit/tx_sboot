@@ -13,6 +13,7 @@
         <module name="springboot-springMVC" />
         <module name="springboot-first" />
         <module name="ali-pay" />
+        <module name="springboot-static-resources" />
         <module name="common-pay" />
         <module name="wx-pay" />
       </profile>
@@ -27,6 +28,7 @@
       <module name="springboot-datasource" options="-parameters" />
       <module name="springboot-first" options="-parameters" />
       <module name="springboot-springMVC" options="-parameters" />
+      <module name="springboot-static-resources" options="-parameters" />
       <module name="springboot-web-component" options="-parameters" />
       <module name="tx_sboot" options="-parameters" />
       <module name="wx-pay" options="-parameters" />
