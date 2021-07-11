@@ -16,6 +16,7 @@
         <module>springboot-web-component</module>
         <module>springboot-springMVC</module>
         <module>springboot-static-resources</module>
+        <module>springboot-thymeleaf</module>
     </modules>
     <!-- 设置为父工程 -->
     <packaging>pom</packaging>
