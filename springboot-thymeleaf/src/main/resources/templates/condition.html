@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="10" align="center" width="300">
+        <tr>
+            <th>角色</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td>
+                <a th:href="@{/users/admin}" th:if="${user.role != null}">管理员</a>
+                <a th:href="@{/users/user}" th:unless="${user.role != null}">用户</a>
+            </td>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.age}"></td>
+        </tr>
+    </table>
+</body>
+</html>

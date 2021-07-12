@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Controller
 public class ThymeleafController {
@@ -40,5 +42,30 @@ public class ThymeleafController {
     public String details(String itemName){
         System.out.println(itemName);
         return "ok";
+    }
+
+    @GetMapping("each")
+    public String each(Model model){
+        List<User> users = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            User user = new User("用户"+i,20+i);
+            users.add(user);
+        }
+        model.addAttribute("users",users);
+        return "each";
+    }
+
+    @GetMapping("condition")
+    public String condition(Model model){
+        List<User> users = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            User user = new User("用户"+i,20+i);
+            if (i%3 == 0){
+                user.setRole(new Role("管理员"));
+            }
+            users.add(user);
+        }
+        model.addAttribute("users",users);
+        return "condition";
     }
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="10" align="center" width="300">
+        <tr>
+            <th>索引</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr th:each="user,iterStat : ${users}" th:class="${iterStat.odd}? 'odd'">
+            <td th:text="${iterStat.index}"></td>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.age}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
