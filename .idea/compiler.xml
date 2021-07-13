@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-datasource" />
+        <module name="springboot-company-sys" />
         <module name="main-test" />
         <module name="springboot-Profile" />
         <module name="springboot-web-component" />
@@ -26,6 +27,7 @@
       <module name="common-pay" options="-parameters" />
       <module name="main-test" options="-parameters" />
       <module name="springboot-Profile" options="-parameters" />
+      <module name="springboot-company-sys" options="-parameters" />
       <module name="springboot-datasource" options="-parameters" />
       <module name="springboot-first" options="-parameters" />
       <module name="springboot-springMVC" options="-parameters" />
