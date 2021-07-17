@@ -18,6 +18,7 @@
         <module>springboot-static-resources</module>
         <module>springboot-thymeleaf</module>
         <module>springboot-company-sys</module>
+        <module>redis-tx-spring-boot-starter</module>
     </modules>
     <!-- 设置为父工程 -->
     <packaging>pom</packaging>

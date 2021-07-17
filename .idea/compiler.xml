@@ -10,6 +10,7 @@
         <module name="springboot-company-sys" />
         <module name="main-test" />
         <module name="springboot-Profile" />
+        <module name="redis-tx-spring-boot-starter" />
         <module name="springboot-web-component" />
         <module name="springboot-springMVC" />
         <module name="springboot-first" />
@@ -26,6 +27,7 @@
       <module name="ali-pay" options="-parameters" />
       <module name="common-pay" options="-parameters" />
       <module name="main-test" options="-parameters" />
+      <module name="redis-tx-spring-boot-starter" options="-parameters" />
       <module name="springboot-Profile" options="-parameters" />
       <module name="springboot-company-sys" options="-parameters" />
       <module name="springboot-datasource" options="-parameters" />

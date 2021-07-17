@@ -2,3 +2,8 @@
 #spring:
 ##  mvc:
 ##    static-path-pattern: /user/**
+
+#配置自定义的Redis的starter中的配置项
+tx:
+  redis:
+    host: 127.0.0.1

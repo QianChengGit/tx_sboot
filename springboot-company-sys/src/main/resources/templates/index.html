@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>系统首页</title>
+</head>
+<frameset cols="15%, *" id="frame_main" border="0" >
+    <frame th:src="@{/menu}" name="menu">
+    <frameset rows="15%, *">
+        <frame th:src="@{/header}" name="header">
+        <frame th:src="@{/main}" name="main">
+    </frameset>
+</frameset>
+
+<noframes>
+    <body>
+
+    </body>
+</noframes>
+</html>
