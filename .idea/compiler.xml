@@ -6,19 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-datasource" />
-        <module name="springboot-company-sys" />
-        <module name="main-test" />
-        <module name="springboot-Profile" />
-        <module name="wx-pay" />
-        <module name="springboot-web-component" />
-        <module name="springboot-springMVC" />
-        <module name="springboot-first" />
         <module name="springboot-thymeleaf" />
+        <module name="springboot-Profile" />
         <module name="ali-pay" />
-        <module name="springboot-static-resources" />
-        <module name="redis-tx-spring-boot-starter" />
+        <module name="springboot-first" />
+        <module name="main-test" />
+        <module name="springboot-datasource" />
         <module name="common-pay" />
+        <module name="springboot-web-component" />
+        <module name="wx-pay" />
+        <module name="springboot-redis" />
+        <module name="redis-tx-spring-boot-starter" />
+        <module name="springboot-static-resources" />
+        <module name="springboot-company-sys" />
+        <module name="springboot-springMVC" />
       </profile>
     </annotationProcessing>
   </component>
@@ -32,6 +33,7 @@
       <module name="springboot-company-sys" options="-parameters" />
       <module name="springboot-datasource" options="-parameters" />
       <module name="springboot-first" options="-parameters" />
+      <module name="springboot-redis" options="-parameters" />
       <module name="springboot-springMVC" options="-parameters" />
       <module name="springboot-static-resources" options="-parameters" />
       <module name="springboot-thymeleaf" options="-parameters" />

@@ -19,6 +19,7 @@
         <module>springboot-thymeleaf</module>
         <module>springboot-company-sys</module>
         <module>redis-tx-spring-boot-starter</module>
+        <module>springboot-redis</module>
     </modules>
     <!-- 设置为父工程 -->
     <packaging>pom</packaging>
