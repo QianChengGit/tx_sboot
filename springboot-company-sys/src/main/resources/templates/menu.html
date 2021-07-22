@@ -8,17 +8,24 @@
             background-color: #aaaaaa;
             margin: 0;
         }
+        a:link,a:visited{
+            text-decoration: none; /*清除超链接默认下划线*/
+        }
+        li{
+            list-style: none; /*清除列表的默认样式*/
+        }
     </style>
 </head>
 <body>
     <div>
+        <div align="center">
+            <h4>菜单栏</h4>
+        </div>
         <ul>
-            <li>页面菜单</li>
-            <li>页面菜单</li>
-            <li>页面菜单</li>
-            <li>页面菜单</li>
-            <li>页面菜单</li>
+            <li><a href="#" th:href="@{/main}" target="main">所有用户</a></li>
+            <li><a href="#" th:href="@{/insert}" target="main">添加用户</a></li>
         </ul>
+
     </div>
 </body>
 </html>

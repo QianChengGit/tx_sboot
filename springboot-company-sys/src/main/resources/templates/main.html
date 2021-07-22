@@ -18,7 +18,8 @@
             margin: auto;
         }
         #main{
-            width: 96%;
+            width: 100%;
+            height: 400px;
             line-height: 1.8;
             margin: auto;
             border: 1px #ccc dashed;
@@ -30,7 +31,29 @@
 <body>
     <div id="all">
         <div id="main">
-内容页面
+            <table border="1" cellspacing="0" align="center" style="width: 900px;text-align: center;margin-top: 30px;">
+                <tr>
+                    <th>序号</th>
+                    <th>用户名</th>
+                    <th>密码</th>
+                    <th>地址</th>
+                    <th>性别</th>
+                    <th>生日</th>
+                    <th>操作</th>
+                </tr>
+                <tr th:each="emp,iterStat : ${emps}" th:class="${iterStat.odd}? 'odd'">
+                    <td th:text="${iterStat.index}"></td>
+                    <td th:text="${emp.username}"></td>
+                    <td th:text="${emp.password}"></td>
+                    <td th:text="${emp.pAddr}"></td>
+                    <td th:text="${emp.gender == 1?'男':'女'}"></td>
+                    <td th:text="${#dates.format(emp.birth,'yyyy-MM-dd')}"></td>
+                    <td>
+                        <a th:href="@{/find(empId=${emp.pid})}">修改</a>
+                        <a th:href="@{/delete(empId=${emp.pid})}" style="margin-left: 20px">删除</a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

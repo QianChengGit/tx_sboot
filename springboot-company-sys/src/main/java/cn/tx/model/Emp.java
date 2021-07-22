@@ -58,4 +58,16 @@ public class Emp {
     public void setBirth(Date birth) {
         this.birth = birth;
     }
+
+    @Override
+    public String toString() {
+        return "Emp{" +
+                "pid=" + pid +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", pAddr='" + pAddr + '\'' +
+                ", gender=" + gender +
+                ", birth=" + birth +
+                '}';
+    }
 }
